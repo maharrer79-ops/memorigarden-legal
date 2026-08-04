@@ -61,7 +61,7 @@ section { margin-top: 3rem; padding-top: 1rem; }
 
 <div class="flower">🌸</div>
 <h1>Memori Garden</h1>
-<p class="meta">Privacy Policy / Datenschutzerklärung · Stand / Last updated: April 2026</p>
+<p class="meta">Privacy Policy / Datenschutzerklärung · Stand / Last updated: August 2026</p>
 
 <div class="langbar">
   <a href="#de">🇩🇪 Deutsch</a>
@@ -94,11 +94,21 @@ section { margin-top: 3rem; padding-top: 1rem; }
 <ul>
   <li>Firebase Auth User-ID</li>
   <li>Absturz-Berichte (Crashlytics, anonymisiert, sofern aktiv)</li>
+  <li><strong>Aktivitätsprotokoll:</strong> was in der App erledigt wurde — Medikament
+      abgehakt, Termin erledigt, Notruf ausgelöst. Für eingeladene Angehörige einsehbar.</li>
+  <li><strong>Chatverläufe</strong> mit dem KI-Begleiter</li>
+  <li><strong>Notizen des KI-Begleiters:</strong> Angaben aus den Gesprächen, die die App
+      sich merkt, um später daran anzuknüpfen</li>
+  <li><strong>Ergebnisse des Gedächtnistrainings</strong> (Punkte pro Tag, Verlauf)</li>
+  <li>Rezepte und Essensplan, Musikvorlieben</li>
 </ul>
 
 <h4>Nur im Notfall</h4>
 <ul>
-  <li>Aktuelle GPS-Position (nur wenn du den SOS-Knopf drückst)</li>
+  <li>Aktuelle GPS-Position (nur wenn der SOS-Knopf gedrückt oder ein Sturz erkannt wird)</li>
+  <li>Der ausgelöste Notruf wird <strong>gespeichert</strong> — mit Zeitpunkt und, sofern
+      verfügbar, Standort — damit Angehörige ihn auch später noch sehen. Er wird mit dem
+      Profil gelöscht.</li>
 </ul>
 
 <h4>Niemals</h4>
@@ -125,7 +135,7 @@ section { margin-top: 3rem; padding-top: 1rem; }
 
 <h3>5. Wo werden die Daten gespeichert?</h3>
 <ul>
-  <li><strong>Firebase / Google Cloud:</strong> Server in der EU (europe-west3, Frankfurt)</li>
+  <li><strong>Firebase / Google Cloud:</strong> Server in der EU (europe-west3, Frankfurt) — sowohl die Datenbank als auch die App-Server, über die Einladungen und KI-Anfragen laufen</li>
   <li><strong>Apple iCloud:</strong> Nur falls du iCloud-Backups aktiviert hast</li>
   <li><strong>Lokal:</strong> UserDefaults + Firestore-Offline-Cache auf deinem iPhone</li>
 </ul>
@@ -142,12 +152,14 @@ section { margin-top: 3rem; padding-top: 1rem; }
   <tr><th>Dienst</th><th>Zweck</th><th>Daten</th></tr>
   <tr><td>Firebase Auth</td><td>Login</td><td>E-Mail, verschlüsseltes Passwort, Google-OAuth-Token</td></tr>
   <tr><td>Firestore</td><td>Datenbank</td><td>Deine Inhalte</td></tr>
-  <tr><td>OpenAI API</td><td>KI-Chat</td><td>Deine Chat-Eingaben (nicht für Training)</td></tr>
+  <tr><td>Google Gemini API</td><td>KI-Chat, Bilderkennung („Was ist das?"), Rezeptvorschläge</td><td>Deine Chat-Eingaben, die aufgenommenen Fotos, Rezept-Anfragen</td></tr>
+  <tr><td>OpenAI API</td><td>Bild-Generierung</td><td>Die Bildbeschreibung, die du eingibst</td></tr>
   <tr><td>Apple WeatherKit</td><td>Wetter</td><td>Standort (grob)</td></tr>
   <tr><td>Apple Speech</td><td>Stimme → Text</td><td>Audio (iOS-lokal oder Apple-Cloud)</td></tr>
   <tr><td>Google Sign-In</td><td>Anmeldung per Google</td><td>E-Mail + Profilname</td></tr>
 </table>
 <p>Für Verarbeitung auf Google-Servern gelten Standardvertragsklauseln (SCC).</p>
+<p><strong>Wichtig zu den KI-Diensten:</strong> Datenbank und App-Server stehen in der EU (siehe Punkt 5). Die Anfragen an die KI-Dienste von Google und OpenAI verlassen die EU jedoch möglicherweise — diese Anbieter verarbeiten je nach Auslastung auch außerhalb Europas. Betroffen sind Chat-Eingaben, Fotos aus der Bilderkennung und Rezept-Anfragen. Wer das nicht möchte, kann Chat, Bilderkennung und Rezeptvorschläge ungenutzt lassen; alle übrigen Funktionen der App arbeiten ohne KI-Dienste.</p>
 
 <h3>8. Deine Rechte (DSGVO)</h3>
 <ul>
@@ -201,11 +213,20 @@ section { margin-top: 3rem; padding-top: 1rem; }
 <ul>
   <li>Firebase Auth user ID</li>
   <li>Crash reports (Crashlytics, anonymized, if enabled)</li>
+  <li><strong>Activity log:</strong> what was completed in the app — medication ticked off,
+      appointment done, emergency call triggered. Visible to invited relatives.</li>
+  <li><strong>Chat history</strong> with the AI companion</li>
+  <li><strong>Notes kept by the AI companion:</strong> details from your conversations the
+      app remembers so it can pick them up later</li>
+  <li><strong>Memory-training results</strong> (daily points and history)</li>
+  <li>Recipes and meal plan, music preferences</li>
 </ul>
 
 <h4>Emergency only</h4>
 <ul>
-  <li>Current GPS location (only when you press the SOS button)</li>
+  <li>Current GPS location (only when the SOS button is pressed or a fall is detected)</li>
+  <li>The alert itself is <strong>stored</strong> — with its time and, where available, the
+      location — so relatives can still see it later. It is deleted with the profile.</li>
 </ul>
 
 <h4>Never</h4>
@@ -232,7 +253,7 @@ section { margin-top: 3rem; padding-top: 1rem; }
 
 <h3>5. Storage Location</h3>
 <ul>
-  <li><strong>Firebase / Google Cloud:</strong> EU servers (europe-west3, Frankfurt)</li>
+  <li><strong>Firebase / Google Cloud:</strong> EU servers (europe-west3, Frankfurt) — both the database and the app servers that handle invites and AI requests</li>
   <li><strong>Apple iCloud:</strong> only if iCloud backup is enabled</li>
   <li><strong>Local:</strong> UserDefaults + Firestore offline cache on your iPhone</li>
 </ul>
@@ -249,12 +270,14 @@ section { margin-top: 3rem; padding-top: 1rem; }
   <tr><th>Service</th><th>Purpose</th><th>Data</th></tr>
   <tr><td>Firebase Auth</td><td>Login</td><td>Email, hashed password, Google OAuth token</td></tr>
   <tr><td>Firestore</td><td>Database</td><td>Your content</td></tr>
-  <tr><td>OpenAI API</td><td>AI chat</td><td>Your chat inputs (not used for training)</td></tr>
+  <tr><td>Google Gemini API</td><td>AI chat, image recognition ("What is this?"), recipe suggestions</td><td>Your chat inputs, the photos you take, recipe requests</td></tr>
+  <tr><td>OpenAI API</td><td>Image generation</td><td>The image description you type</td></tr>
   <tr><td>Apple WeatherKit</td><td>Weather</td><td>Location (coarse)</td></tr>
   <tr><td>Apple Speech</td><td>Voice → text</td><td>Audio (on-device or Apple cloud)</td></tr>
   <tr><td>Google Sign-In</td><td>Google login</td><td>Email + profile name</td></tr>
 </table>
 <p>Google server processing is governed by Standard Contractual Clauses (SCC).</p>
+<p><strong>Important, regarding the AI services:</strong> The database and app servers are located in the EU (see section 5). Requests to the AI services of Google and OpenAI may however leave the EU — depending on load, those providers also process outside Europe. This affects chat inputs, photos from image recognition and recipe requests. If you prefer to avoid this, you can simply not use chat, image recognition and recipe suggestions; every other feature of the app works without the AI services.</p>
 
 <h3>8. Your Rights (GDPR)</h3>
 <ul>
