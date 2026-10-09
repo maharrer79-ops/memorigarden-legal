@@ -61,7 +61,7 @@ section { margin-top: 3rem; padding-top: 1rem; }
 
 <div class="flower">🌸</div>
 <h1>Memori</h1>
-<p class="meta">Privacy Policy / Datenschutzerklärung · Stand / Last updated: August 2026</p>
+<p class="meta">Privacy Policy / Datenschutzerklärung · Stand / Last updated: Oktober / October 2026</p>
 
 <div class="langbar">
   <a href="#de">🇩🇪 Deutsch</a>
@@ -131,6 +131,7 @@ section { margin-top: 3rem; padding-top: 1rem; }
   <li>Vertrag/Servicebereitstellung (Art. 6 Abs. 1 lit. b DSGVO)</li>
   <li>Berechtigtes Interesse (Art. 6 Abs. 1 lit. f DSGVO)</li>
   <li>Einwilligung, sofern erforderlich (Art. 6 Abs. 1 lit. a DSGVO)</li>
+  <li>Für Gesundheitsdaten, die an KI-Dienste gehen: ausdrückliche Einwilligung in der App (Art. 9 Abs. 2 lit. a DSGVO)</li>
 </ul>
 
 <h3>5. Wo werden die Daten gespeichert?</h3>
@@ -152,14 +153,16 @@ section { margin-top: 3rem; padding-top: 1rem; }
   <tr><th>Dienst</th><th>Zweck</th><th>Daten</th></tr>
   <tr><td>Firebase Auth</td><td>Login</td><td>E-Mail, verschlüsseltes Passwort, Google-OAuth-Token</td></tr>
   <tr><td>Firestore</td><td>Datenbank</td><td>Deine Inhalte</td></tr>
-  <tr><td>Google Gemini API</td><td>KI-Chat, Bilderkennung („Was ist das?"), Rezeptvorschläge</td><td>Deine Chat-Eingaben, die aufgenommenen Fotos, Rezept-Anfragen — nicht zum Training verwendet, siehe unten</td></tr>
-  <tr><td>OpenAI API</td><td>Bild-Generierung</td><td>Die Bildbeschreibung, die du eingibst — nicht zum Training verwendet, siehe unten</td></tr>
+  <tr><td>Google Gemini API</td><td>KI-Chat, Bilderkennung („Was ist das?"), Rezeptvorschläge</td><td>Deine Chat-Eingaben, die aufgenommenen Fotos, Rezept-Anfragen und – damit die Antworten passen – Angaben aus dem Profil (Vorname, Erinnerungen, Personen, selbst eingetragene Gesundheitswerte). Nur nach deiner Einwilligung in der App; nicht zum Training verwendet, siehe unten</td></tr>
+  <tr><td>OpenAI API</td><td>Bild-Generierung</td><td>Die Bildbeschreibung, die du eingibst. Nur nach deiner Einwilligung in der App; nicht zum Training verwendet, siehe unten</td></tr>
+  <tr><td>Apple Health (HealthKit)</td><td>Messwerte übernehmen – nur lesen, nur auf Knopfdruck</td><td>Gewicht, Puls, Blutdruck, Blutzucker, Temperatur. Übernommene Werte werden im Profil gespeichert, aber <strong>nie</strong> an KI-Dienste gesendet und nicht für Werbung verwendet</td></tr>
   <tr><td>Apple WeatherKit</td><td>Wetter</td><td>Standort (grob)</td></tr>
   <tr><td>Apple Speech</td><td>Stimme → Text</td><td>Audio (iOS-lokal oder Apple-Cloud)</td></tr>
   <tr><td>Google Sign-In</td><td>Anmeldung per Google</td><td>E-Mail + Profilname</td></tr>
 </table>
 <p>Für Verarbeitung auf Google-Servern gelten Standardvertragsklauseln (SCC).</p>
-<p><strong>Wichtig zu den KI-Diensten:</strong> Datenbank und App-Server stehen in der EU (siehe Punkt 5). Die Anfragen an die KI-Dienste von Google und OpenAI verlassen die EU jedoch möglicherweise — diese Anbieter verarbeiten je nach Auslastung auch außerhalb Europas. Betroffen sind Chat-Eingaben, Fotos aus der Bilderkennung und Rezept-Anfragen. Wer das nicht möchte, kann Chat, Bilderkennung und Rezeptvorschläge ungenutzt lassen; alle übrigen Funktionen der App arbeiten ohne KI-Dienste.</p>
+<p><strong>Wichtig zu den KI-Diensten:</strong> Datenbank und App-Server stehen in der EU (siehe Punkt 5). Die Anfragen an die KI-Dienste von Google und OpenAI verlassen die EU jedoch möglicherweise — diese Anbieter verarbeiten je nach Auslastung auch außerhalb Europas. Betroffen sind Chat-Eingaben, Fotos aus der Bilderkennung und Rezept-Anfragen samt der mitgesendeten Profilangaben. Wer das nicht möchte, kann Chat, Bilderkennung und Rezeptvorschläge ungenutzt lassen; alle übrigen Funktionen der App arbeiten ohne KI-Dienste.</p>
+<p><strong>Einwilligung:</strong> Die KI-Funktionen sind erst aktiv, nachdem du in der App ausdrücklich eingewilligt hast. Du kannst die Einwilligung jederzeit unter Einstellungen → KI-Funktionen widerrufen; danach werden keine Inhalte mehr an KI-Dienste gesendet.</p>
 <p><strong>Keine Verwendung zum Training:</strong> Beide Dienste werden von uns im <em>kostenpflichtigen</em> Tarif genutzt. Nach den Nutzungsbedingungen der Anbieter werden dort übermittelte Eingaben und Antworten weder zum Training noch zur Verbesserung ihrer Modelle verwendet, und es findet keine Auswertung durch Menschen statt. Für Nutzer im Europäischen Wirtschaftsraum gilt das nach denselben Bedingungen unabhängig vom Tarif.</p>
 
 <h3>8. Deine Rechte (DSGVO)</h3>
@@ -250,6 +253,7 @@ section { margin-top: 3rem; padding-top: 1rem; }
   <li>Contract / service (Art. 6(1)(b) GDPR)</li>
   <li>Legitimate interest (Art. 6(1)(f) GDPR)</li>
   <li>Consent when required (Art. 6(1)(a) GDPR)</li>
+  <li>For health data sent to AI services: explicit consent in the app (Art. 9(2)(a) GDPR)</li>
 </ul>
 
 <h3>5. Storage Location</h3>
@@ -271,14 +275,16 @@ section { margin-top: 3rem; padding-top: 1rem; }
   <tr><th>Service</th><th>Purpose</th><th>Data</th></tr>
   <tr><td>Firebase Auth</td><td>Login</td><td>Email, hashed password, Google OAuth token</td></tr>
   <tr><td>Firestore</td><td>Database</td><td>Your content</td></tr>
-  <tr><td>Google Gemini API</td><td>AI chat, image recognition ("What is this?"), recipe suggestions</td><td>Your chat inputs, the photos you take, recipe requests — not used for training, see below</td></tr>
-  <tr><td>OpenAI API</td><td>Image generation</td><td>The image description you type — not used for training, see below</td></tr>
+  <tr><td>Google Gemini API</td><td>AI chat, image recognition ("What is this?"), recipe suggestions</td><td>Your chat inputs, the photos you take, recipe requests and – so the answers fit – details from the profile (first name, memories, people, health readings you entered yourself). Only after your consent in the app; not used for training, see below</td></tr>
+  <tr><td>OpenAI API</td><td>Image generation</td><td>The image description you type. Only after your consent in the app; not used for training, see below</td></tr>
+  <tr><td>Apple Health (HealthKit)</td><td>Import readings – read-only, only when you tap the button</td><td>Weight, pulse, blood pressure, blood sugar, temperature. Imported readings are stored in the profile but are <strong>never</strong> sent to AI services and not used for advertising</td></tr>
   <tr><td>Apple WeatherKit</td><td>Weather</td><td>Location (coarse)</td></tr>
   <tr><td>Apple Speech</td><td>Voice → text</td><td>Audio (on-device or Apple cloud)</td></tr>
   <tr><td>Google Sign-In</td><td>Google login</td><td>Email + profile name</td></tr>
 </table>
 <p>Google server processing is governed by Standard Contractual Clauses (SCC).</p>
-<p><strong>Important, regarding the AI services:</strong> The database and app servers are located in the EU (see section 5). Requests to the AI services of Google and OpenAI may however leave the EU — depending on load, those providers also process outside Europe. This affects chat inputs, photos from image recognition and recipe requests. If you prefer to avoid this, you can simply not use chat, image recognition and recipe suggestions; every other feature of the app works without the AI services.</p>
+<p><strong>Important, regarding the AI services:</strong> The database and app servers are located in the EU (see section 5). Requests to the AI services of Google and OpenAI may however leave the EU — depending on load, those providers also process outside Europe. This affects chat inputs, photos from image recognition and recipe requests, including the profile details sent with them. If you prefer to avoid this, you can simply not use chat, image recognition and recipe suggestions; every other feature of the app works without the AI services.</p>
+<p><strong>Consent:</strong> The AI features are only active after you have explicitly agreed in the app. You can withdraw your consent at any time under Settings → AI features; after that, no content is sent to AI services.</p>
 <p><strong>Not used for training:</strong> We use both services on their <em>paid</em> tier. Under the providers' terms, inputs and responses sent there are not used to train or improve their models, and are not reviewed by humans. For users in the European Economic Area the same terms apply regardless of tier.</p>
 
 <h3>8. Your Rights (GDPR)</h3>
