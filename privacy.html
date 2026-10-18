@@ -61,7 +61,7 @@ tr:last-child td { border-bottom: none; }
 <main class="huelle">
   <a class="zurueck" href="./">← Memori</a>
   <h1>Datenschutzerklärung</h1>
-  <p class="stand">Privacy Policy / Datenschutzerklärung · Stand / Last updated: 17. Oktober 2026 / 17 October 2026</p>
+  <p class="stand">Privacy Policy / Datenschutzerklärung · Stand / Last updated: 18. Oktober 2026 / 18 October 2026</p>
   <ul class="sprachen">
     <li><a href="#de" hreflang="de">Deutsch</a></li>
     <li><a href="#en" hreflang="en" lang="en">English</a></li>
@@ -74,7 +74,7 @@ tr:last-child td { border-bottom: none; }
 <h3>Kurz gesagt</h3>
 <ul>
   <li>Memori speichert, was du einträgst – Erinnerungen, Fotos, Termine, Medikamente –, damit du und deine Familie es wiederfindet.</li>
-  <li>Gesundheitsangaben speichert Memori nur, wenn du für das Profil ausdrücklich zustimmst. Memi, die KI-Begleiterin, gibt es nur mit einer eigenen Zustimmung.</li>
+  <li>Medikamente und Messwerte speichert Memori nur, wenn du für das Profil ausdrücklich zustimmst. Memi, die KI-Begleiterin, gibt es nur mit einer eigenen Zustimmung.</li>
   <li>Alle, die du zu einem Profil einlädst, sehen alles in diesem Profil – auch Gesundheitsangaben, die Gespräche mit Memi und den Standort eines Notrufs.</li>
   <li>Keine Werbung, kein Tracking, kein Verkauf von Daten.</li>
   <li>Du kannst Profil und Konto jederzeit in der App löschen.</li>
@@ -98,10 +98,10 @@ tr:last-child td { border-bottom: none; }
 
 <h4>Was du in einem Profil einträgst</h4>
 <ul>
-  <li>Name des Profils, Sprache, Profilbild, auf Wunsch Geburtsdatum</li>
+  <li>Name des Profils, Sprache, Profilbild; ein Geburtsdatum, falls du es angibst, bleibt nur auf dem Gerät</li>
   <li>Erinnerungen und Tagebuch (Text, Sprachaufnahmen, Stimmung), Lebensgeschichte</li>
   <li>Fotos, Sprach- und Videonachrichten von Angehörigen, gespeicherte Ergebnisse von „Was ist das?“ samt Foto</li>
-  <li>Personenkarten (Name, Beziehung, Foto, Notizen) und Notfallkontakte (Name, Telefonnummer) – das sind auch Daten anderer Menschen</li>
+  <li>Personenkarten (Name, Beziehung, Geburtstag, Foto, Notizen, Eigenschaften, Telefonnummer, FaceTime-Adresse) und Notfallkontakte (Name, Telefonnummer) – das sind auch Daten anderer Menschen</li>
   <li>Termine, Erinnerungen, Rezepte, Essensplan, Musikvorlieben, Ergebnisse der Gedächtnisspiele</li>
   <li>Ein Aktivitätsprotokoll für die Angehörigen: was erledigt wurde, z. B. ein abgehakter Termin oder ein Notruf</li>
 </ul>
@@ -112,7 +112,8 @@ tr:last-child td { border-bottom: none; }
   <li>Messwerte (Blutdruck, Gewicht, Puls, Blutzucker, Temperatur), von Hand eingetragen oder auf Knopfdruck aus Apple Health übernommen (Memori liest dort nur)</li>
   <li>Notizen, die Memi sich zu Gesundheit und Sorgen macht</li>
 </ul>
-<p>Ohne diese Zustimmung lassen sich in dem Profil keine Medikamente und Messwerte anlegen. Widerrufst du sie, werden die Gesundheitsangaben des Profils gelöscht.</p>
+<p>Ohne diese Zustimmung lässt die App in dem Profil keine Medikamente und Messwerte anlegen. Widerrufst du sie oder lehnst du sie ab, werden die Gesundheitsangaben des Profils gelöscht – auch die zugehörigen Termine, Einnahme-Einträge und gespeicherte Medikamente aus „Was ist das?“.</p>
+<p>Auch in freien Texten und Fotos – Tagebuch, Notizen, Nachrichten an Memi, „Was ist das?“ – kann Gesundheitliches stehen, wenn du es hineinschreibst oder fotografierst. Das kann die App nicht erkennen; es wird wie der übrige Inhalt gespeichert und nur mit der KI-Zustimmung an KI-Dienste geschickt (Abschnitt 6).</p>
 
 <h4>Im Notfall</h4>
 <ul>
@@ -127,16 +128,16 @@ tr:last-child td { border-bottom: none; }
 
 <h4>Nur auf deinem Gerät</h4>
 <ul>
-  <li>Notfallkarte (Blutgruppe, Allergien, Vorerkrankungen usw.) – verschlüsselt im Schlüsselbund, nur auf diesem Gerät, nie in einem Backup</li>
+  <li>Notfallkarte (Blutgruppe, Allergien, Vorerkrankungen usw.) – verschlüsselt im Schlüsselbund dieses Geräts; sie wird nie auf ein anderes Gerät übertragen</li>
   <li>Befinden (Stimmung, Schlaf), Tagesplan, Spielstände, Religion (für Gebete und Feiertage), die PIN der App-Sperre</li>
-  <li>Ein Zwischenspeicher der Datenbank, damit Memori auch ohne Internet funktioniert</li>
+  <li>Ein Zwischenspeicher der Datenbank, damit Memori auch ohne Internet funktioniert; nach dem Abmelden oder Löschen wird er beim nächsten Start der App geleert</li>
 </ul>
 
 <h4>Technisch</h4>
 <ul>
   <li>Absturzberichte nur, wenn du sie in den Einstellungen einschaltest (Gerätemodell, iOS-Version, Absturzstelle, eine zufällige Installationskennung – keine Inhalte)</li>
   <li>Nutzungszähler für die Grenzen der KI-Funktionen und für Einladungen (Missbrauchsschutz)</li>
-  <li>Protokolle der App-Server: Nutzer-ID, Zeitpunkt, verwendetes KI-Modell, Anzahl der Zeichen – keine Inhalte</li>
+  <li>Protokolle der App-Server: Zeitpunkt, aufgerufene Funktion, IP-Adresse und App-Kennung (erfasst Google Cloud automatisch), verwendetes KI-Modell und Anzahl der Token, Fehlermeldungen, beim Löschen eines Kontos die Nutzer-ID – keine Inhalte deiner Einträge oder Gespräche</li>
 </ul>
 
 <h4>Niemals</h4>
@@ -156,12 +157,12 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Nutzungsgrenzen, Missbrauchsschutz, Server- und Webserver-Protokolle</td><td>Berechtigtes Interesse an einem sicheren und bezahlbaren Betrieb, Art. 6 Abs. 1 lit. f</td></tr>
 </table></div>
 <p><strong>Profile für eine andere Person:</strong> Legst du ein Profil für jemand anderen an, gibst du beim ersten Öffnen an, ob die Person einverstanden ist oder ob du ihre gesetzliche Vertretung bist (z. B. Erwachsenenvertretung, Vorsorgevollmacht). Die Einwilligungen werden dann von ihr bzw. für sie erteilt. Ohne eine dieser Grundlagen trag bitte nichts über die Person ein.</p>
-<p><strong>Nachweis:</strong> Wer wann welcher Einwilligung zugestimmt oder sie widerrufen hat, wird beim Profil mit Datum und Textversion gespeichert.</p>
+<p><strong>Nachweis:</strong> Die Freigaben für das Profil (Gesundheitsangaben und KI) erteilt oder widerruft nur, wer das Profil angelegt hat. Wann das mit welcher Textversion und auf welcher Grundlage geschah, wird beim Profil gespeichert. Die persönliche KI-Zustimmung jedes anderen Nutzers wird auf seinem Gerät gespeichert.</p>
 
 <h3>4. Wer Zugriff hat</h3>
 <ul>
   <li><strong>Du</strong> über dein Konto.</li>
-  <li><strong>Alle Mitglieder des Profils.</strong> Einladen kann nur, wer das Profil angelegt hat; beim Beitritt bekommt er eine Mitteilung. Mitglieder sehen und bearbeiten <strong>alles</strong> im Profil – auch Gesundheitsangaben, die Gespräche mit Memi und Memis Notizen, das Aktivitätsprotokoll und den Standort eines Notrufs. Lade nur ein, wem die betreute Person vertraut.</li>
+  <li><strong>Alle Mitglieder des Profils.</strong> Einladen kann nur, wer das Profil angelegt hat; beim Beitritt bekommt er eine Mitteilung. Mitglieder sehen <strong>alles</strong> im Profil – auch Gesundheitsangaben, die Gespräche mit Memi und Memis Notizen, das Aktivitätsprotokoll und den Standort eines Notrufs – und können alles ändern außer den Einwilligungen, den Einladungen und dem Löschen des Profils. Lade nur ein, wem die betreute Person vertraut.</li>
   <li><strong>Unsere Dienstleister</strong> (Abschnitt 5) verarbeiten die Daten in unserem Auftrag, um die App zu betreiben.</li>
   <li><strong>Wir selbst</strong> schauen nicht in Profile. Technisch hat der Betreiber Zugriff auf die Datenbank; genutzt wird er nur, wenn du um Hilfe bittest oder ein Fehler das zwingend erfordert.</li>
 </ul>
@@ -170,7 +171,7 @@ tr:last-child td { border-bottom: none; }
 <div class="tabelle"><table>
   <tr><th>Dienst</th><th>Wofür</th><th>Welche Daten</th></tr>
   <tr><td>Google Firebase (Google Cloud): Anmeldung, Datenbank, App-Server</td><td>Konto, Speichern, Einladungen, Weiterleitung an die KI</td><td>Konto- und Profildaten. Datenbank und App-Server stehen in Frankfurt (europe-west3); die Anmeldung betreibt Google weltweit.</td></tr>
-  <tr><td>Firebase Cloud Messaging und Apple Push Notification Service</td><td>Mitteilungen und Notrufe zustellen</td><td>Push-Token; beim Notruf der Profilname und ein Link mit dem Standort</td></tr>
+  <tr><td>Firebase Cloud Messaging und Apple Push Notification Service</td><td>Mitteilungen und Notrufe zustellen</td><td>Push-Token und Text der Mitteilung; beim Notruf der Profilname und ein Apple-Karten-Link mit dem genauen Standort (Apple Karten erhält ihn erst, wenn jemand darauf tippt)</td></tr>
   <tr><td>Firebase Crashlytics</td><td>Absturzberichte – nur, wenn eingeschaltet</td><td>siehe Abschnitt 2, „Technisch“</td></tr>
   <tr><td>Google Gemini API</td><td>Memi, Bilderkennung („Was ist das?“), Rezeptideen</td><td>Siehe Abschnitt 6</td></tr>
   <tr><td>OpenAI API</td><td>Erzeugte Bilder</td><td>Die Bildbeschreibung, die du eingibst, bzw. der Name eines Rezepts für ein Rezeptbild</td></tr>
@@ -178,19 +179,23 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Apple WeatherKit</td><td>Wetter</td><td>Auf etwa 1 km gerundeter Standort, nicht gespeichert</td></tr>
   <tr><td>Apple Spracherkennung</td><td>Sprache in Text</td><td>Gesprochenes; Apple verarbeitet es auf dem Gerät oder auf eigenen Servern</td></tr>
   <tr><td>Apple Music, ShazamKit, iTunes-Suche</td><td>Musik hören, Lieder erkennen, Lieder suchen</td><td>Suchbegriffe; bei der Liederkennung eine Audio-Signatur</td></tr>
+  <tr><td>Apple Books, Apple Podcasts, Spotify</td><td>Hörbücher und Podcasts suchen</td><td>Tippst du auf einen dieser Knöpfe, öffnet sich die App bzw. Website des Anbieters mit deinem Suchbegriff; ab dann gelten dessen Bedingungen.</td></tr>
   <tr><td>Radiosender</td><td>Radio hören</td><td>Beim Abspielen erhält der Sender bzw. sein Streaming-Anbieter deine IP-Adresse und Geräteangaben. Die Sender sitzen in mehreren Ländern, auch außerhalb der EU (z. B. USA, Großbritannien, Türkei, Japan, Südkorea).</td></tr>
   <tr><td>Apple (App Store)</td><td>Abo-Kauf</td><td>Den Kauf wickelt Apple ab; Memori prüft auf dem Gerät nur, welches Abo aktiv ist.</td></tr>
+  <tr><td>Hostinger</td><td>Server unserer Website</td><td>Siehe Abschnitt 12</td></tr>
+  <tr><td>GitHub Pages</td><td>Bereitstellung dieser Datenschutzerklärung (die App verlinkt dorthin)</td><td>Beim Aufruf IP-Adresse und Browserangaben bei GitHub (USA)</td></tr>
 </table></div>
-<p>Den Wochenbericht verschickst du über die Mail-App deines Geräts an die Adressen, die du einträgst; er läuft nicht über unsere Server. Wenn du die Kalender-Synchronisation einschaltest, schreibt Memori Termine in den Kalender deines Geräts; je nach Kalender landen sie bei iCloud oder Google. Medikamente erscheinen dort nur als neutrale Erinnerung ohne Namen und Menge.</p>
+<p>Den Wochenbericht – er enthält auch die Medikamenten-Einnahmen der Woche – verschickst du über die Mail-App deines Geräts an die Adressen, die du einträgst; er läuft nicht über unsere Server. Wenn du die Kalender-Synchronisation einschaltest, schreibt Memori Termine in den Kalender deines Geräts; je nach Kalender landen sie bei iCloud oder Google. Medikamente erscheinen dort nur als neutrale Erinnerung ohne Namen und Menge.</p>
 
 <h3>6. Memi und die anderen KI-Funktionen</h3>
 <ul>
   <li><strong>Memi ist eine KI, kein Mensch.</strong> Die Antworten können falsch sein. Memi ersetzt keine Ärztin, keinen Arzt und keinen Notruf; Memori ist kein Medizinprodukt.</li>
   <li><strong>Nur mit Zustimmung:</strong> Wer das Profil angelegt hat, gibt die KI für das Profil frei, und jeder Nutzer stimmt auf seinem Gerät selbst zu. Widerrufen geht jederzeit unter Einstellungen → KI-Funktionen; danach wird nichts mehr gesendet.</li>
-  <li><strong>Was gesendet wird:</strong> deine Nachrichten und die Fotos, die du dafür auswählst; dazu aus dem Profil Vorname, Lebensgeschichte, Tagebucheinträge, Namen und Beziehung der Personen und Memis Notizen. Messwerte und Medikamente werden nicht gesendet. Bei Rezeptideen: Kategorie, Lieblingsessen und die Namen gespeicherter Rezepte.</li>
+  <li><strong>Was gesendet wird:</strong> deine Nachrichten und die Fotos, die du dafür auswählst (bei „Was ist das?“ z. B. auch das Foto einer Medikamentenpackung); dazu aus dem Profil der Name des Profils, Lebensgeschichte, Tagebucheinträge, Namen und Beziehung der Personen und Memis Notizen – auch die zu Gesundheit und Sorgen. Der Medikamentenplan und die Messwerte werden nicht gesendet. Bei Rezeptideen: Kategorie, Lieblingsessen und die Namen gespeicherter Rezepte; bei erzeugten Bildern deine Beschreibung bzw. der Rezeptname.</li>
   <li><strong>Automatische Notizen:</strong> Memi merkt sich aus Gesprächen selbst Stichpunkte, auch zu Gesundheit und Sorgen (Letzteres nur mit der Zustimmung für Gesundheitsangaben). Du siehst und löschst sie unter „Was ich über dich weiß“. Es gibt keine automatisierten Entscheidungen im Sinne von Art. 22 DSGVO.</li>
   <li><strong>Wohin:</strong> Die Anfragen laufen über unsere App-Server in Frankfurt zu Google (Gemini) bzw. OpenAI. Diese Anbieter können sie auch außerhalb der EU verarbeiten, etwa in den USA (Abschnitt 7).</li>
-  <li><strong>Kein Training:</strong> Wir nutzen beide Dienste im kostenpflichtigen Tarif. Nach den Bedingungen der Anbieter werden die Inhalte dort nicht zum Training ihrer Modelle verwendet. Die Anbieter dürfen Anfragen für eine begrenzte Zeit aufbewahren, um Missbrauch zu erkennen; dabei können Menschen in Einzelfällen Einblick nehmen. Wir senden keine Nutzer-ID mit.</li>
+  <!-- TODO (Manuel): In der Google-Cloud-Console bestätigen, dass für das Gemini-Projekt eine Abrechnung (Paid Services) aktiv ist. Google verlangt das für Apps, die Nutzer im EWR erreichen. -->
+  <li><strong>Kein Training:</strong> Wir binden beide Dienste über ihre Programmierschnittstelle (API) für Unternehmen an, nicht über ihre Verbraucher-Apps. Nach den Bedingungen der Anbieter für diese Nutzung werden die Inhalte nicht zum Training ihrer Modelle verwendet. Die Anbieter dürfen Anfragen für eine begrenzte Zeit aufbewahren, um Missbrauch zu erkennen; dabei können Menschen in Einzelfällen Einblick nehmen. Wir senden keine Nutzer-ID mit.</li>
   <li><strong>Erzeugte Bilder</strong> sind in der App als KI-Bild gekennzeichnet.</li>
 </ul>
 
@@ -203,21 +208,21 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Konto und Inhalte der Profile</td><td>Bis du sie löschst, das Profil löschst oder dein Konto löschst</td></tr>
   <tr><td>Gesundheitsangaben</td><td>Bis du sie löschst oder die Zustimmung widerrufst</td></tr>
   <tr><td>Chatverlauf mit Memi</td><td>Bis du ihn löschst („Neues Gespräch“) oder das Profil löschst</td></tr>
-  <tr><td>Notrufe und Mitteilungen</td><td>90 Tage</td></tr>
-  <tr><td>Aktivitätsprotokoll</td><td>12 Monate</td></tr>
+  <tr><td>Notrufe (mit Standort) und Mitteilungen</td><td>90 Tage</td></tr>
+  <tr><td>Aktivitätsprotokoll (auch der Eintrag „Notruf ausgelöst“, ohne Standort)</td><td>12 Monate</td></tr>
   <tr><td>Einladungen</td><td>Bis 7 Tage nach Ablauf oder Einlösung</td></tr>
   <tr><td>Nutzungszähler</td><td>Monatszähler 13 Monate, Tageszähler 2 Tage</td></tr>
   <tr><td>Protokolle der App-Server</td><td>30 Tage</td></tr>
   <tr><td>Absturzberichte</td><td>90 Tage (bei Google)</td></tr>
   <tr><td>Daten nur auf dem Gerät</td><td>Bis du sie löschst, dich abmeldest (Befinden, Spielstände) oder Profil bzw. Konto löschst (Notfallkarte, Tagesplan)</td></tr>
 </table></div>
-<p>Gelöschtes entfernen wir sofort aus der Datenbank. In den technischen Sicherungen von Google können Reste nach Angaben von Google noch bis zu etwa 180 Tage liegen, bevor sie überschrieben werden. Eigene Sicherungskopien legen wir nicht an.</p>
+<p>Abgelaufene Einträge löscht die Datenbank automatisch, in der Regel innerhalb eines Tages nach Ablauf der Frist. Gelöschtes entfernen wir sofort aus der Datenbank. In den technischen Sicherungen von Google können Reste nach Angaben von Google noch bis zu etwa 180 Tage liegen, bevor sie überschrieben werden. Eigene Sicherungskopien legen wir nicht an.</p>
 
 <h3>9. Deine Rechte</h3>
 <ul>
   <li><strong>Auskunft</strong> über deine Daten (Art. 15) und eine <strong>Kopie</strong> – in der App unter Einstellungen → Daten als PDF exportieren; eine vollständige Auskunft, auch in maschinenlesbarer Form (Art. 20), bekommst du auf Anfrage per E-Mail.</li>
   <li><strong>Berichtigung</strong> (Art. 16) – die meisten Angaben kannst du in der App selbst ändern.</li>
-  <li><strong>Löschung</strong> (Art. 17) – „Profil löschen“ (wer das Profil angelegt hat) entfernt das Profil mit allen Inhalten; „Konto löschen“ entfernt dein Konto, deine Profile und deine Mitgliedschaften, dazu, was davon auf dem Gerät liegt.</li>
+  <li><strong>Löschung</strong> (Art. 17) – „Profil löschen“ (wer das Profil angelegt hat) entfernt das Profil mit allen Inhalten; „Konto löschen“ entfernt dein Konto, die Profile, die du angelegt hast, deine Mitgliedschaften und deine Familiennachrichten, dazu, was davon auf dem Gerät liegt. Was du in einem Profil eingetragen hast, das jemand anderes angelegt hat, bleibt dort – es gehört zu dessen Profil und kann dort gelöscht werden.</li>
   <li><strong>Einschränkung</strong> (Art. 18) und <strong>Widerspruch</strong> gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21) – per E-Mail.</li>
   <li><strong>Widerruf</strong> jeder Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3) – in den Einstellungen.</li>
   <li><strong>Beschwerde</strong> bei einer Aufsichtsbehörde, in Österreich bei der Datenschutzbehörde, Barichgasse 40–42, 1030 Wien, <a href="https://www.dsb.gv.at">www.dsb.gv.at</a>.</li>
@@ -230,7 +235,8 @@ tr:last-child td { border-bottom: none; }
 <p>Memori richtet sich an Erwachsene, vor allem an ältere Menschen und ihre Angehörigen. Die App ist nicht für Personen unter 16 Jahren bestimmt.</p>
 
 <h3>12. Website</h3>
-<p>Beim Aufruf unserer Website speichert der Webserver aus Sicherheitsgründen ein Protokoll mit Zeitpunkt, aufgerufener Seite, Browser und einer gekürzten IP-Adresse (Art. 6 Abs. 1 lit. f). Die Website setzt keine Cookies, lädt keine Inhalte von Dritten und verwendet keine Analyse-Werkzeuge. Diese Datenschutzerklärung wird zusätzlich über GitHub Pages (GitHub, USA) bereitgestellt.</p>
+<!-- TODO (Manuel): Access-Log des Traefik vor der Website prüfen (volle IP?), siehe infra/landingpage/AGENT-PROMPT-DEPLOY.md. -->
+<p>Unsere Website läuft auf einem Server bei Hostinger. Beim Aufruf speichert der Webserver aus Sicherheitsgründen ein Protokoll mit Zeitpunkt, aufgerufener Seite, Ergebnis, Datenmenge und einer gekürzten IP-Adresse – keine Browserangaben (Art. 6 Abs. 1 lit. f). Das Protokoll wird überschrieben, sobald es etwa 10 MB erreicht. Die Website setzt keine Cookies, lädt keine Inhalte von Dritten und verwendet keine Analyse-Werkzeuge. Diese Datenschutzerklärung liegt zusätzlich auf GitHub Pages (GitHub, USA); dorthin verlinkt die App. Beim Aufruf dort verarbeitet GitHub die IP-Adresse.</p>
 
 <h3>13. Änderungen</h3>
 <p>Ändert sich etwas Wesentliches, sagen wir es in der App. Für neue Zwecke fragen wir neu um Zustimmung.</p>
@@ -246,7 +252,7 @@ tr:last-child td { border-bottom: none; }
 <h3>In short</h3>
 <ul>
   <li>Memori stores what you enter – memories, photos, appointments, medications – so that you and your family can find it again.</li>
-  <li>Memori only stores health details if you explicitly agree for the profile. Memi, the AI companion, needs its own consent.</li>
+  <li>Memori only stores medications and readings if you explicitly agree for the profile. Memi, the AI companion, needs its own consent.</li>
   <li>Everyone you invite to a profile sees everything in it – including health details, the conversations with Memi and the location of an emergency alert.</li>
   <li>No advertising, no tracking, no selling of data.</li>
   <li>You can delete a profile and your account at any time in the app.</li>
@@ -270,10 +276,10 @@ tr:last-child td { border-bottom: none; }
 
 <h4>What you enter in a profile</h4>
 <ul>
-  <li>Profile name, language, profile picture, birth date if you wish</li>
+  <li>Profile name, language, profile picture; a birth date, if you enter one, stays on the device only</li>
   <li>Memories and diary (text, voice recordings, mood), life story</li>
   <li>Photos, voice and video messages from relatives, saved “What is this?” results including the photo</li>
-  <li>Person cards (name, relationship, photo, notes) and emergency contacts (name, phone number) – this is also data about other people</li>
+  <li>Person cards (name, relationship, birthday, photo, notes, traits, phone number, FaceTime address) and emergency contacts (name, phone number) – this is also data about other people</li>
   <li>Appointments, reminders, recipes, meal plan, music preferences, memory-game results</li>
   <li>An activity log for relatives: what was done, e.g. an appointment ticked off or an emergency alert</li>
 </ul>
@@ -284,7 +290,8 @@ tr:last-child td { border-bottom: none; }
   <li>Readings (blood pressure, weight, pulse, blood sugar, temperature), entered by hand or imported from Apple Health when you tap the button (Memori only reads there)</li>
   <li>Notes Memi makes about health and worries</li>
 </ul>
-<p>Without this consent, medications and readings cannot be added to the profile. If you withdraw it, the profile’s health details are deleted.</p>
+<p>Without this consent, the app does not let you add medications and readings to the profile. If you withdraw or decline it, the profile’s health details are deleted – including the related appointments, intake entries and medications saved from “What is this?”.</p>
+<p>Free text and photos – diary, notes, messages to Memi, “What is this?” – can also contain health information if you write or photograph it. The app cannot detect this; it is stored like the rest of the content and only sent to AI services with the AI consent (section 6).</p>
 
 <h4>In an emergency</h4>
 <ul>
@@ -299,16 +306,16 @@ tr:last-child td { border-bottom: none; }
 
 <h4>Only on your device</h4>
 <ul>
-  <li>Emergency card (blood type, allergies, conditions etc.) – encrypted in the keychain, on this device only, never in a backup</li>
+  <li>Emergency card (blood type, allergies, conditions etc.) – encrypted in this device’s keychain; it is never transferred to another device</li>
   <li>Wellbeing (mood, sleep), day plan, game scores, religion (for prayers and holidays), the PIN of the app lock</li>
-  <li>A cache of the database so that Memori also works offline</li>
+  <li>A cache of the database so that Memori also works offline; after signing out or deleting, it is cleared the next time the app starts</li>
 </ul>
 
 <h4>Technical</h4>
 <ul>
   <li>Crash reports only if you turn them on in the settings (device model, iOS version, crash location, a random installation ID – no content)</li>
   <li>Usage counters for the limits of the AI features and for invitations (abuse protection)</li>
-  <li>App server logs: user ID, time, AI model used, number of characters – no content</li>
+  <li>App server logs: time, function called, IP address and app identifier (recorded automatically by Google Cloud), AI model used and number of tokens, error messages, the user ID when an account is deleted – no content of your entries or conversations</li>
 </ul>
 
 <h4>Never</h4>
@@ -328,12 +335,12 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Usage limits, abuse protection, server and web server logs</td><td>Legitimate interest in secure and affordable operation, Art. 6(1)(f)</td></tr>
 </table></div>
 <p><strong>Profiles for another person:</strong> If you create a profile for someone else, you state when first opening it whether the person agrees or whether you are their legal representative (e.g. legal guardian, lasting power of attorney). Consents are then given by them or on their behalf. Without one of these, please do not enter anything about the person.</p>
-<p><strong>Record:</strong> Who agreed to or withdrew which consent, and when, is stored with the profile together with the date and the text version.</p>
+<p><strong>Record:</strong> Only the person who created the profile gives or withdraws the profile’s permissions (health details and AI). When this happened, with which text version and on which basis, is stored with the profile. Every other user’s personal AI consent is stored on their device.</p>
 
 <h3>4. Who Has Access</h3>
 <ul>
   <li><strong>You</strong>, through your account.</li>
-  <li><strong>All members of the profile.</strong> Only the person who created the profile can invite others, and they are notified when someone joins. Members see and edit <strong>everything</strong> in the profile – including health details, the conversations with Memi and Memi’s notes, the activity log and the location of an emergency alert. Only invite people the person trusts.</li>
+  <li><strong>All members of the profile.</strong> Only the person who created the profile can invite others, and they are notified when someone joins. Members see <strong>everything</strong> in the profile – including health details, the conversations with Memi and Memi’s notes, the activity log and the location of an emergency alert – and can change everything except the consents, the invitations and deleting the profile. Only invite people the person trusts.</li>
   <li><strong>Our service providers</strong> (section 5) process the data on our behalf to run the app.</li>
   <li><strong>We</strong> do not look into profiles. The operator technically has access to the database; it is only used if you ask for help or an error makes it strictly necessary.</li>
 </ul>
@@ -342,7 +349,7 @@ tr:last-child td { border-bottom: none; }
 <div class="tabelle"><table>
   <tr><th>Service</th><th>Purpose</th><th>Data</th></tr>
   <tr><td>Google Firebase (Google Cloud): sign-in, database, app servers</td><td>Account, storage, invitations, forwarding to the AI</td><td>Account and profile data. Database and app servers are located in Frankfurt (europe-west3); Google runs sign-in globally.</td></tr>
-  <tr><td>Firebase Cloud Messaging and Apple Push Notification service</td><td>Delivering notifications and emergency alerts</td><td>Push token; for an emergency alert, the profile name and a link with the location</td></tr>
+  <tr><td>Firebase Cloud Messaging and Apple Push Notification service</td><td>Delivering notifications and emergency alerts</td><td>Push token and the text of the notification; for an emergency alert, the profile name and an Apple Maps link with the precise location (Apple Maps only receives it when someone taps it)</td></tr>
   <tr><td>Firebase Crashlytics</td><td>Crash reports – only if turned on</td><td>see section 2, “Technical”</td></tr>
   <tr><td>Google Gemini API</td><td>Memi, image recognition (“What is this?”), recipe ideas</td><td>See section 6</td></tr>
   <tr><td>OpenAI API</td><td>Generated pictures</td><td>The picture description you type, or the name of a recipe for a recipe picture</td></tr>
@@ -350,19 +357,22 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Apple WeatherKit</td><td>Weather</td><td>Location rounded to about 1 km, not stored</td></tr>
   <tr><td>Apple speech recognition</td><td>Speech to text</td><td>What you say; Apple processes it on the device or on its own servers</td></tr>
   <tr><td>Apple Music, ShazamKit, iTunes search</td><td>Listening to music, recognising songs, searching for songs</td><td>Search terms; for song recognition an audio signature</td></tr>
+  <tr><td>Apple Books, Apple Podcasts, Spotify</td><td>Searching for audiobooks and podcasts</td><td>If you tap one of these buttons, the provider’s app or website opens with your search term; from then on its terms apply.</td></tr>
   <tr><td>Radio stations</td><td>Listening to the radio</td><td>When playing, the station or its streaming provider receives your IP address and device information. The stations are based in several countries, including outside the EU (e.g. USA, United Kingdom, Turkey, Japan, South Korea).</td></tr>
   <tr><td>Apple (App Store)</td><td>Subscription purchase</td><td>Apple handles the purchase; Memori only checks on the device which subscription is active.</td></tr>
+  <tr><td>Hostinger</td><td>Server of our website</td><td>See section 12</td></tr>
+  <tr><td>GitHub Pages</td><td>Hosting this privacy policy (the app links to it)</td><td>When it is opened, IP address and browser information at GitHub (USA)</td></tr>
 </table></div>
-<p>You send the weekly report with your device’s mail app to the addresses you enter; it does not go through our servers. If you turn on calendar sync, Memori writes appointments to your device’s calendar; depending on the calendar they end up with iCloud or Google. Medications appear there only as a neutral reminder without name and amount.</p>
+<p>You send the weekly report – it also contains the week’s medication intakes – with your device’s mail app to the addresses you enter; it does not go through our servers. If you turn on calendar sync, Memori writes appointments to your device’s calendar; depending on the calendar they end up with iCloud or Google. Medications appear there only as a neutral reminder without name and amount.</p>
 
 <h3>6. Memi and the Other AI Features</h3>
 <ul>
   <li><strong>Memi is an AI, not a person.</strong> Answers can be wrong. Memi does not replace a doctor or an emergency call; Memori is not a medical device.</li>
   <li><strong>Only with consent:</strong> The person who created the profile enables AI for the profile, and every user agrees on their own device. You can withdraw at any time under Settings → AI features; after that nothing is sent.</li>
-  <li><strong>What is sent:</strong> your messages and the photos you choose for it; plus from the profile first name, life story, diary entries, names and relationships of people and Memi’s notes. Readings and medications are not sent. For recipe ideas: category, favourite dishes and the names of saved recipes.</li>
+  <li><strong>What is sent:</strong> your messages and the photos you choose for it (for “What is this?”, for example, also the photo of a medicine package); plus from the profile the profile name, life story, diary entries, names and relationships of people and Memi’s notes – including those about health and worries. The medication plan and the readings are not sent. For recipe ideas: category, favourite dishes and the names of saved recipes; for generated pictures your description or the recipe name.</li>
   <li><strong>Automatic notes:</strong> Memi notes down points from conversations by herself, including about health and worries (the latter only with the consent for health details). You can see and delete them under “What I know about you”. There is no automated decision-making within the meaning of Art. 22 GDPR.</li>
   <li><strong>Where to:</strong> Requests go through our app servers in Frankfurt to Google (Gemini) or OpenAI. These providers may also process them outside the EU, for example in the USA (section 7).</li>
-  <li><strong>No training:</strong> We use both services on their paid tier. Under the providers’ terms, the content is not used to train their models. The providers may keep requests for a limited time to detect abuse; in individual cases people may look at them. We do not send a user ID.</li>
+  <li><strong>No training:</strong> We connect both services through their business programming interface (API), not their consumer apps. Under the providers’ terms for this use, the content is not used to train their models. The providers may keep requests for a limited time to detect abuse; in individual cases people may look at them. We do not send a user ID.</li>
   <li><strong>Generated pictures</strong> are labelled as AI pictures in the app.</li>
 </ul>
 
@@ -375,21 +385,21 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Account and profile content</td><td>Until you delete it, the profile or your account</td></tr>
   <tr><td>Health details</td><td>Until you delete them or withdraw consent</td></tr>
   <tr><td>Chat history with Memi</td><td>Until you delete it (“New chat”) or the profile</td></tr>
-  <tr><td>Emergency alerts and notifications</td><td>90 days</td></tr>
-  <tr><td>Activity log</td><td>12 months</td></tr>
+  <tr><td>Emergency alerts (with location) and notifications</td><td>90 days</td></tr>
+  <tr><td>Activity log (including the entry “emergency alert sent”, without location)</td><td>12 months</td></tr>
   <tr><td>Invitations</td><td>Until 7 days after expiry or use</td></tr>
   <tr><td>Usage counters</td><td>Monthly counters 13 months, daily counters 2 days</td></tr>
   <tr><td>App server logs</td><td>30 days</td></tr>
   <tr><td>Crash reports</td><td>90 days (at Google)</td></tr>
   <tr><td>Data only on the device</td><td>Until you delete it, sign out (wellbeing, game scores) or delete the profile or account (emergency card, day plan)</td></tr>
 </table></div>
-<p>We remove deleted data from the database immediately. According to Google, remnants may remain in Google’s technical backups for up to about 180 days before they are overwritten. We do not keep our own backup copies.</p>
+<p>The database deletes expired entries automatically, usually within a day after the period ends. We remove deleted data from the database immediately. According to Google, remnants may remain in Google’s technical backups for up to about 180 days before they are overwritten. We do not keep our own backup copies.</p>
 
 <h3>9. Your Rights</h3>
 <ul>
-  <li><strong>Access</strong> to your data (Art. 15) and a <strong>copy</strong> – in the app under Settings → Export data as PDF; a complete copy, also in machine-readable form (Art. 20), is available on request by email.</li>
+  <li><strong>Access</strong> to your data (Art. 15) and a <strong>copy</strong> – in the app under Settings → Export data as PDF; full information, also in machine-readable form (Art. 20), is available on request by email.</li>
   <li><strong>Rectification</strong> (Art. 16) – you can change most details yourself in the app.</li>
-  <li><strong>Erasure</strong> (Art. 17) – “Delete profile” (by the person who created it) removes the profile with all content; “Delete account” removes your account, your profiles and your memberships, plus what of it is stored on the device.</li>
+  <li><strong>Erasure</strong> (Art. 17) – “Delete profile” (by the person who created it) removes the profile with all content; “Delete account” removes your account, the profiles you created, your memberships and your family messages, plus what of it is stored on the device. What you entered in a profile someone else created stays there – it belongs to their profile and can be deleted there.</li>
   <li><strong>Restriction</strong> (Art. 18) and <strong>objection</strong> to processing based on legitimate interests (Art. 21) – by email.</li>
   <li><strong>Withdrawal</strong> of any consent with effect for the future (Art. 7(3)) – in the settings.</li>
   <li><strong>Complaint</strong> to a supervisory authority, in Austria the Datenschutzbehörde, Barichgasse 40–42, 1030 Vienna, <a href="https://www.dsb.gv.at">www.dsb.gv.at</a>.</li>
@@ -402,7 +412,7 @@ tr:last-child td { border-bottom: none; }
 <p>Memori is intended for adults, especially older people and their relatives. The app is not intended for people under 16.</p>
 
 <h3>12. Website</h3>
-<p>When you visit our website, the web server keeps a log with time, page, browser and a shortened IP address for security reasons (Art. 6(1)(f)). The website sets no cookies, loads no third-party content and uses no analytics tools. This privacy policy is also provided via GitHub Pages (GitHub, USA).</p>
+<p>Our website runs on a server at Hostinger. When you visit it, the web server keeps a log with time, page, result, data size and a shortened IP address for security reasons – no browser information (Art. 6(1)(f)). The log is overwritten once it reaches about 10 MB. The website sets no cookies, loads no third-party content and uses no analytics tools. This privacy policy is also hosted on GitHub Pages (GitHub, USA); the app links there. When it is opened there, GitHub processes the IP address.</p>
 
 <h3>13. Changes</h3>
 <p>If anything material changes, we will tell you in the app. For new purposes we ask for consent again.</p>
