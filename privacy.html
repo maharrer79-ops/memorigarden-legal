@@ -100,6 +100,7 @@ tr:last-child td { border-bottom: none; }
 <ul>
   <li>Der Name, unter dem du im Profil erscheinst – der aus deiner Anmeldung oder, wenn dort keiner steht, der, den du beim Beitritt eingibst –, deine Rolle („Verwaltet das Profil“ oder „Angehöriger“) und das Beitrittsdatum. Alle Mitglieder sehen das, in der Mitgliederliste und auf dem Notruf-Bildschirm. Wer das Profil verwaltet, bekommt deinen Namen mit der Beitrittsmitteilung.</li>
   <li>Ob du als „die Person selbst“ gekennzeichnet bist, also als die Person, um die es im Profil geht. Die Kennzeichnung setzt, wer das Profil verwaltet; du kannst sie selbst wieder entfernen.</li>
+  <li>Bist du „die Person selbst“: der Tag, an dem du Memori zuletzt geöffnet hast – ohne Uhrzeit und ohne Inhalte –, damit deine Angehörigen sehen, dass du heute schon da warst. Alle Mitglieder sehen das. Du kannst es in den Einstellungen unter „Was meine Familie sieht“ abschalten; dann wird es gelöscht.</li>
   <li>Nachweise zu den Einwilligungen: wer (Nutzer-ID) wann welcher Textversion auf welcher Grundlage zugestimmt oder widerrufen hat; bei einer Übergabe, von wem an wen und wann.</li>
 </ul>
 
@@ -118,7 +119,7 @@ tr:last-child td { border-bottom: none; }
   <li>Medikamente mit Menge und Uhrzeit, ob sie genommen wurden, und der eingetragene Vorrat</li>
   <li>Messwerte (Blutdruck, Gewicht, Puls, Blutzucker, Temperatur), von Hand eingetragen oder auf Knopfdruck aus Apple Health übernommen (Memori liest dort nur)</li>
   <li>Notizen, die Memi sich zu Gesundheit und Sorgen macht</li>
-  <li>Das Befinden (Stimmung, Schlaf) – es bleibt nur auf deinem Gerät</li>
+  <li>Das Befinden (Stimmung, Schlaf) – es bleibt auf dem Gerät der Person. <strong>Nur wenn sie es selbst freigibt</strong> (oder ihre gesetzliche Vertretung), mit einer eigenen, ausdrücklichen Zustimmung, gehen Stimmung und Schlaf – nie die Notiz – in die Datenbank, und alle Mitglieder des Profils sehen sie. Memori wertet sie nicht aus. Sie werden nach 30 Tagen gelöscht, beim Ausschalten sofort.</li>
 </ul>
 <p>Ohne diese Zustimmung lässt die App in dem Profil keine Medikamente, Messwerte und kein Befinden anlegen. Widerrufst du sie oder lehnst du sie ab, werden die Gesundheitsangaben des Profils gelöscht – auch die zugehörigen Termine, Einnahme-Einträge und gespeicherte Medikamente aus „Was ist das?“.</p>
 <p>Auch in freien Texten und Fotos – Tagebuch, Notizen, Nachrichten an Memi, „Was ist das?“ – kann Gesundheitliches stehen, wenn du es hineinschreibst oder fotografierst. Das kann die App nicht erkennen; es wird wie der übrige Inhalt gespeichert und nur mit der KI-Zustimmung an KI-Dienste geschickt (Abschnitt 6).</p>
@@ -137,7 +138,7 @@ tr:last-child td { border-bottom: none; }
 <h4>Nur auf deinem Gerät</h4>
 <ul>
   <li>Notfallkarte (Blutgruppe, Allergien, Vorerkrankungen usw.) – verschlüsselt im Schlüsselbund dieses Geräts; sie wird nie auf ein anderes Gerät übertragen</li>
-  <li>Befinden (Stimmung, Schlaf; nur mit der Zustimmung für Gesundheitsangaben), Tagesplan, Spielstände, Religion (für Gebete und Feiertage), die PIN der App-Sperre</li>
+  <li>Befinden (Stimmung, Schlaf; nur mit der Zustimmung für Gesundheitsangaben; Stimmung und Schlaf gehen nur in die Datenbank, wenn die Person sie selbst mit ihrer Familie teilt), Tagesplan, Spielstände, Religion (für Gebete und Feiertage), die PIN der App-Sperre</li>
   <li>Ein Zwischenspeicher der Datenbank, damit Memori auch ohne Internet funktioniert; nach dem Abmelden oder Löschen wird er beim nächsten Start der App geleert</li>
 </ul>
 
@@ -162,13 +163,16 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Gesundheitsangaben (Medikamente, Messwerte, Memis Notizen zu Gesundheit und Sorgen)</td><td>Ausdrückliche Einwilligung für das Profil, Art. 9 Abs. 2 lit. a (zusätzlich zu Art. 6 Abs. 1 lit. a)</td></tr>
   <tr><td>Notruf und Standort bei SOS oder erkanntem Sturz</td><td>Vertrag, Art. 6 Abs. 1 lit. b; für eine Person, die nicht selbst Vertragspartnerin ist: lebenswichtige Interessen, Art. 6 Abs. 1 lit. d; soweit Gesundheitsbezug besteht und die Person nicht einwilligen kann: lebenswichtige Interessen, Art. 9 Abs. 2 lit. c</td></tr>
   <tr><td>Memi und die anderen KI-Funktionen</td><td>Einwilligung, Art. 6 Abs. 1 lit. a und Art. 9 Abs. 2 lit. a</td></tr>
+  <!-- TODO (Anwalt, Frage L14): Teilen des Befindens und Anzeige des letzten Nutzungstags prüfen. -->
+  <tr><td>Befinden (Stimmung, Schlaf) mit den Mitgliedern teilen</td><td>Ausdrückliche Einwilligung der Person selbst bzw. ihrer gesetzlichen Vertretung, Art. 9 Abs. 2 lit. a (zusätzlich zur Einwilligung für Gesundheitsangaben)</td></tr>
+  <tr><td>Anzeige, an welchem Tag die Person zuletzt in Memori war</td><td>Berechtigtes Interesse der Person und ihrer Familie, dass jemand bemerkt, wenn etwas nicht stimmt, Art. 6 Abs. 1 lit. f; die Person kann es jederzeit abschalten</td></tr>
   <tr><td>Absturzberichte</td><td>Einwilligung, Art. 6 Abs. 1 lit. a (und § 165 Abs. 3 TKG)</td></tr>
   <tr><td>Nachweise zu Einwilligungen und Übergaben</td><td>Rechtliche Pflicht, eine Einwilligung nachweisen zu können, Art. 6 Abs. 1 lit. c i. V. m. Art. 7 Abs. 1</td></tr>
   <tr><td>Daten anderer Menschen auf Personenkarten und in Notfallkontakten</td><td>Berechtigtes Interesse, Art. 6 Abs. 1 lit. f – dein Interesse, Erinnerungen und Kontakte zu ordnen; die Angaben sind auf das Nötige beschränkt und nur für die Mitglieder des Profils sichtbar</td></tr>
   <tr><td>Nutzungsgrenzen, Missbrauchsschutz, Server- und Webserver-Protokolle</td><td>Berechtigtes Interesse an einem sicheren und bezahlbaren Betrieb, Art. 6 Abs. 1 lit. f</td></tr>
 </table></div>
 <p><strong>Profile für eine andere Person:</strong> Legst du ein Profil für jemand anderen an, gibst du beim ersten Öffnen an, ob die Person einverstanden ist oder ob du sie rechtlich vertrittst (Erwachsenenvertretung, rechtliche Betreuung oder eine Vorsorgevollmacht, die das umfasst). Die Einwilligungen werden dann von ihr bzw. für sie erteilt. Ohne eine dieser Grundlagen trag bitte nichts über die Person ein. Wird das Profil übergeben, fragt die App die neue verwaltende Person einmal nach ihrer eigenen Grundlage.</p>
-<p><strong>Nachweis:</strong> Die Freigaben für das Profil (Gesundheitsangaben und KI) trägt ein, wer das Profil verwaltet – wer es angelegt oder übergeben bekommen hat. Widerrufen kann sie außerdem die Person selbst, wenn sie im Profil so gekennzeichnet ist. Bei jeder Einwilligung und jedem Widerruf speichern wir beim Profil, wer (Nutzer-ID) wann welcher Textversion auf welcher Grundlage zugestimmt bzw. widerrufen hat; bei einer Übergabe, von wem an wen und wann. Bestehende Einwilligungen gelten nach einer Übergabe weiter. Die persönliche KI-Zustimmung jedes anderen Nutzers wird auf seinem Gerät gespeichert.</p>
+<p><strong>Nachweis:</strong> Die Freigaben für das Profil (Gesundheitsangaben und KI) trägt ein, wer das Profil verwaltet – wer es angelegt oder übergeben bekommen hat. Widerrufen kann sie außerdem die Person selbst, wenn sie im Profil so gekennzeichnet ist. Das Teilen des Befindens gibt die Person selbst frei – oder, wenn sie das nicht kann, wer das Profil verwaltet und angegeben hat, sie gesetzlich zu vertreten; ausschalten können es beide. Bei jeder Einwilligung und jedem Widerruf speichern wir beim Profil, wer (Nutzer-ID) wann welcher Textversion auf welcher Grundlage zugestimmt bzw. widerrufen hat; bei einer Übergabe, von wem an wen und wann. Bestehende Einwilligungen gelten nach einer Übergabe weiter. Die persönliche KI-Zustimmung jedes anderen Nutzers wird auf seinem Gerät gespeichert.</p>
 
 <h3>4. Wer Zugriff hat</h3>
 <ul>
@@ -227,6 +231,8 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Einladungen</td><td>Bis 7 Tage nach Ablauf oder Einlösung</td></tr>
   <tr><td>Nutzungszähler</td><td>Monatszähler 13 Monate, Tageszähler 2 Tage</td></tr>
   <tr><td>Abo-Angaben am Profil</td><td>Solange das Profil besteht; welches Konto gekauft hat, bis dieses Konto gelöscht wird</td></tr>
+  <tr><td>Geteiltes Befinden (Stimmung, Schlaf)</td><td>30 Tage; beim Ausschalten, beim Widerruf der Zustimmung für Gesundheitsangaben oder mit dem Profil bzw. dem Konto der Person sofort</td></tr>
+  <tr><td>Tag, an dem die Person zuletzt in Memori war</td><td>Wird täglich überschrieben; gelöscht beim Abschalten oder mit dem Profil bzw. dem Konto der Person</td></tr>
   <tr><td>Protokolle der App-Server</td><td>30 Tage</td></tr>
   <tr><td>Absturzberichte</td><td>90 Tage (bei Google)</td></tr>
   <tr><td>Daten nur auf dem Gerät</td><td>Bis du sie löschst, dich abmeldest (Befinden, Spielstände) oder Profil bzw. Konto löschst (Notfallkarte, Tagesplan)</td></tr>
@@ -293,6 +299,7 @@ tr:last-child td { border-bottom: none; }
 <ul>
   <li>The name you appear under in the profile – the one from your sign-in or, if there is none, the one you enter when joining –, your role (“Manages the profile” or “Companion”) and the date you joined. All members see this, in the member list and on the emergency screen. The person who manages the profile receives your name with the join notification.</li>
   <li>Whether you are marked as “the person themself”, i.e. the person the profile is about. This is set by the person who manages the profile; you can remove the mark yourself.</li>
+  <li>If you are “the person themself”: the day you last opened Memori – without the time and without any content – so that your family can see you have already been in today. All members see this. You can switch it off in the settings under “What my family sees”; it is then deleted.</li>
   <li>Consent records: who (user ID) agreed or withdrew, when, to which text version and on which basis; for a handover, from whom to whom and when.</li>
 </ul>
 
@@ -311,7 +318,7 @@ tr:last-child td { border-bottom: none; }
   <li>Medications with amount and time, whether they were taken, and the stock you entered</li>
   <li>Readings (blood pressure, weight, pulse, blood sugar, temperature), entered by hand or imported from Apple Health when you tap the button (Memori only reads there)</li>
   <li>Notes Memi makes about health and worries</li>
-  <li>Wellbeing (mood, sleep) – it stays on your device only</li>
+  <li>Wellbeing (mood, sleep) – it stays on the person’s device. <strong>Only if they share it themselves</strong> (or their legal representative does), with a separate explicit consent, do mood and sleep – never the note – go into the database, where all members of the profile see them. Memori does not evaluate them. They are deleted after 30 days, and immediately when sharing is switched off.</li>
 </ul>
 <p>Without this consent, the app does not let you add medications, readings or wellbeing to the profile. If you withdraw or decline it, the profile’s health details are deleted – including the related appointments, intake entries and medications saved from “What is this?”.</p>
 <p>Free text and photos – diary, notes, messages to Memi, “What is this?” – can also contain health information if you write or photograph it. The app cannot detect this; it is stored like the rest of the content and only sent to AI services with the AI consent (section 6).</p>
@@ -330,7 +337,7 @@ tr:last-child td { border-bottom: none; }
 <h4>Only on your device</h4>
 <ul>
   <li>Emergency card (blood type, allergies, conditions etc.) – encrypted in this device’s keychain; it is never transferred to another device</li>
-  <li>Wellbeing (mood, sleep; only with the consent for health details), day plan, game scores, religion (for prayers and holidays), the PIN of the app lock</li>
+  <li>Wellbeing (mood, sleep; only with the consent for health details; mood and sleep go into the database only if the person shares them with their family), day plan, game scores, religion (for prayers and holidays), the PIN of the app lock</li>
   <li>A cache of the database so that Memori also works offline; after signing out or deleting, it is cleared the next time the app starts</li>
 </ul>
 
@@ -355,13 +362,16 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Health details (medications, readings, Memi’s notes about health and worries)</td><td>Explicit consent for the profile, Art. 9(2)(a) (in addition to Art. 6(1)(a))</td></tr>
   <tr><td>Emergency alert and location on SOS or a detected fall</td><td>Contract, Art. 6(1)(b); for a person who is not our contracting party: vital interests, Art. 6(1)(d); where health-related and the person cannot consent: vital interests, Art. 9(2)(c)</td></tr>
   <tr><td>Memi and the other AI features</td><td>Consent, Art. 6(1)(a) and Art. 9(2)(a)</td></tr>
+  <!-- TODO (lawyer, question L14): review sharing of wellbeing and showing the day of last use. -->
+  <tr><td>Sharing wellbeing (mood, sleep) with the members</td><td>Explicit consent of the person themself or their legal representative, Art. 9(2)(a) (in addition to the consent for health details)</td></tr>
+  <tr><td>Showing on which day the person was last in Memori</td><td>Legitimate interest of the person and their family that someone notices if something is wrong, Art. 6(1)(f); the person can switch it off at any time</td></tr>
   <tr><td>Crash reports</td><td>Consent, Art. 6(1)(a) (and § 165(3) of the Austrian Telecommunications Act)</td></tr>
   <tr><td>Records of consents and handovers</td><td>Legal obligation to be able to demonstrate consent, Art. 6(1)(c) in conjunction with Art. 7(1)</td></tr>
   <tr><td>Data about other people on person cards and emergency contacts</td><td>Legitimate interest, Art. 6(1)(f) – your interest in organising memories and contacts; limited to what is necessary and visible only to the profile’s members</td></tr>
   <tr><td>Usage limits, abuse protection, server and web server logs</td><td>Legitimate interest in secure and affordable operation, Art. 6(1)(f)</td></tr>
 </table></div>
 <p><strong>Profiles for another person:</strong> If you create a profile for someone else, you state when first opening it whether the person agrees or whether you legally represent them (adult representation or guardianship, or a lasting power of attorney that covers this). Consents are then given by them or on their behalf. Without one of these, please do not enter anything about the person. If the profile is handed over, the app asks the new manager once for their own basis.</p>
-<p><strong>Record:</strong> The profile’s permissions (health details and AI) are recorded by the person who manages the profile – who created it or had it handed over. The person themself can also withdraw them if they are marked as such in the profile. For every consent and withdrawal we store with the profile who (user ID) agreed or withdrew, when, to which text version and on which basis; for a handover, from whom to whom and when. Existing consents remain in effect after a handover. Every other user’s personal AI consent is stored on their device.</p>
+<p><strong>Record:</strong> The profile’s permissions (health details and AI) are recorded by the person who manages the profile – who created it or had it handed over. The person themself can also withdraw them if they are marked as such in the profile. Sharing wellbeing is allowed by the person themself – or, if they cannot do so, by the person who manages the profile and has stated that they legally represent them; both can switch it off. For every consent and withdrawal we store with the profile who (user ID) agreed or withdrew, when, to which text version and on which basis; for a handover, from whom to whom and when. Existing consents remain in effect after a handover. Every other user’s personal AI consent is stored on their device.</p>
 
 <h3>4. Who Has Access</h3>
 <ul>
@@ -419,6 +429,8 @@ tr:last-child td { border-bottom: none; }
   <tr><td>Invitations</td><td>Until 7 days after expiry or use</td></tr>
   <tr><td>Usage counters</td><td>Monthly counters 13 months, daily counters 2 days</td></tr>
   <tr><td>Subscription details on a profile</td><td>As long as the profile exists; which account bought it, until that account is deleted</td></tr>
+  <tr><td>Shared wellbeing (mood, sleep)</td><td>30 days; immediately when sharing is switched off, when the consent for health details is withdrawn, or with the profile or the person’s account</td></tr>
+  <tr><td>Day the person was last in Memori</td><td>Overwritten daily; deleted when switched off or with the profile or the person’s account</td></tr>
   <tr><td>App server logs</td><td>30 days</td></tr>
   <tr><td>Crash reports</td><td>90 days (at Google)</td></tr>
   <tr><td>Data only on the device</td><td>Until you delete it, sign out (wellbeing, game scores) or delete the profile or account (emergency card, day plan)</td></tr>
